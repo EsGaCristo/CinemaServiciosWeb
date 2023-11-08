@@ -1,6 +1,8 @@
 const express = require('express');
 const morgan = require('morgan');
 
+require('./utils/mongoConnection')
+
 const bookRouter = require('./routers/books.router');
 
 //Declararemos puertos
