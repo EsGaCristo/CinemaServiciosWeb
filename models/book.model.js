@@ -1,4 +1,4 @@
-const mongose = require('mongose');
+const mongose = require('mongoose');
 
 let bookSchema = new mongose.Schema({
     titulo: {type:String},

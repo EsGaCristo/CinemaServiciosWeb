@@ -1,6 +1,5 @@
 const express = require('express');
 const morgan = require('morgan');
-const mongose = require('mongose');
 
 const bookRouter = require('./routers/books.router');
 
