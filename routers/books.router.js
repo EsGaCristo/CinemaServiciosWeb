@@ -6,10 +6,10 @@ router.get('/',booksController.getBooks);
 
 router.get('/:bookId',booksController.getBooksById);
 
-router.get('/',booksController.newBook);
+router.post('/',booksController.newBook);
 
-router.get('/:bookId',booksController.updateBook);
+router.put('/:bookId',booksController.updateBook);
 
-router.get('/:bookId',booksController.deleteBook);
+router.delete('/:bookId',booksController.deleteBook);
 
 module.exports = router;
