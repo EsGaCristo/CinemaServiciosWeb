@@ -7,4 +7,4 @@ let movieSchema = new mongoose.Schema({
     year:{type:String},
     duracion:{type:Number},
 });
-module.exports = mongose.model('Movie',movieSchema,'movie');
+module.exports = mongoose.model('Movie',movieSchema,'movie');
