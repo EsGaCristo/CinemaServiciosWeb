@@ -85,7 +85,7 @@ exports.updateMovie = async (req, res) => {
 exports.deleteMovie = async (req, res) => {
     const movieId = req.params.movieId;
     try {
-        await Movie.findByIdAndRemove(movieId);
+        await Movie.findOneAndDelete({_id:movieId});
         return res.status(200).json(
             {
                 message: `Libro eliminado con ID ${movieId} `,
@@ -94,7 +94,7 @@ exports.deleteMovie = async (req, res) => {
     } catch (error) {
         return res.status(500).json(
             {
-                message: "Error al eliminar el libro",
+                message: "Error al eliminar el libro2",
                 data: error,
             }
         );
